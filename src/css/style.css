@@ -1,0 +1,117 @@
+/* Styling for main page */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", 'Gigi Sans';
+    margin: 0;
+}
+
+body {
+    background-color: #DBF9FC;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+Link{
+    color: black; 
+    text-decoration: none;
+}
+.recpie-nav{ 
+    text-decoration: none !important;
+    color: black !important; 
+}
+
+.recpie-nav:hover{ 
+    color: rgb(255, 255, 255) !important; 
+}
+
+.board {
+    text-align: center;
+}
+
+.board .leaderboard{
+    margin-bottom: 1em;
+}
+
+.board .duration{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.category-button{ 
+    border: none;
+    border-radius: 15px;
+    /* border: 0.1px solid rgb(46, 46, 46);  */
+    padding: .5em 2em;
+    background-color:  #DBF9FC;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #60806E;
+    color:rgb(255, 255, 255);
+    transition: 0.5s ease-in-out;
+}
+
+#profile{
+    margin-top: 3em;
+}
+
+#profile .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+#profile .flex .item{
+    display: flex;
+    align-items: center;
+}
+
+#profile .flex img{
+    width: 80px;
+    height:80px;
+    border-radius: 50px;
+}
+
+#profile .flex .info{
+   padding: 1em;
+}
+
+.profile-button {
+    width: 350px;
+    background-color: #DBF9FC;
+    border-radius: 50px;
+    border-width: thin;
+    height: 90px;
+
+}
+
+.profile-button:hover{
+    background-color: #6b8b79;
+    color: white !important;
+    font-weight: bolder;
+    border-color:  rgb(38, 255, 154);
+    box-shadow: 10px 10px rgb(38, 255, 154);
+    transition: 0.5s ease-in-out;
+  
+}
+
+.profile-button:hover .RecpieNav {
+    color: white;  
+  }
+
+
+.time-duration {
+  padding-left:270px; 
+  margin-top:-80px;
+}
