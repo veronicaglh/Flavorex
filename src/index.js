@@ -1,17 +1,62 @@
+// Import statements 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from "react-dom/client";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Import statements for routing 
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import ChocolateCake from './components/recipe_components/chocolate_cake';
+import DoroWet from './components/recipe_components/doro_wet';
+import Firfir from './components/recipe_components/firfir';
+import Mesir from './components/recipe_components/mesir';
+import Shiro from './components/recipe_components/shiro';
+import VanillaCake from './components/recipe_components/vanilla_cake';
+
+
+// ROUTING 
+const router = createBrowserRouter([
+  {
+    path: "/", 
+    element: <App/>, 
+  }, 
+
+  {
+    path: "chocolatecake", 
+    element: <ChocolateCake/>, 
+  },
+   
+  {
+    path: "dorowet", 
+    element: <DoroWet/>, 
+  }, 
+
+  {
+    path: "firfir", 
+    element: <Firfir/>, 
+  }, 
+
+  {
+    path: "mesir", 
+    element: <Mesir/>, 
+  }, 
+
+  {
+    path: "shiro", 
+    element: <Shiro/>, 
+  }, 
+  
+  {
+    path: "vanillacake", 
+    element: <VanillaCake/>, 
+  }
+
+]); 
+
+
+const root = ReactDOM.createRoot(document.getElementById('root')); 
 root.render(
   <React.StrictMode>
-    <App />
+  {/* <App />  */}
+  <RouterProvider router={router}/>  
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
