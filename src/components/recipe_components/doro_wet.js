@@ -3,7 +3,7 @@ import React from 'react';
 
 // Import statements for css files 
 import '../../css/style.css';
-import '../../css/recpie_style.css';
+import '../../css/recipe_style.css';
 
 
 export default function DoroWet() {
