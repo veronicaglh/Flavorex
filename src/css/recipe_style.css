@@ -1,0 +1,41 @@
+/*Styling for the recpie components*/
+
+.recpie-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recpie-background-image{
+    height: 300px;
+    width: 500px;
+    border-radius: 0px 0px 40px 40px;
+    filter: brightness(100%);
+    filter: saturate(80%);
+    transition: 1s ease-in-out;
+}
+
+.ingredients-card{
+    width: 440px; 
+    height: 500px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 130px;
+    background-color: #98b4a6;
+    color: rgb(255, 255, 255); 
+    border-radius: 40px 40px 40px 40px;    
+}
+
+.ingredients-card h1{
+    text-align: center;
+    padding: 20px; 
+}
+
+.ingredients-card p{
+    position:relative; 
+    left: 30px
+}
+
+.recpie-formula{
+    padding-top:20px;
+}
